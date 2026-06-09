@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rosanjin — Pop-up Dining · Supper Club</title>
-  <meta name="description" content="rosanjin is an intimate pop-up dining experience rooted in the traditions of East Asian cuisine with modern western influence. Each event is seasonal, unique, and ideated by myself. - Matthew Cheung" />
+  <title>Rosanjin — Pop-up Dining · Supper Club </title>
+  <meta name="description" content="rosanjin is an intimate pop-up dining experience blending Japanese, Chinese, and modern Western cuisine." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -47,15 +47,11 @@
       font-weight: 400; text-decoration: none;
     }
     .nav-logo span { color: var(--red); }
-    .nav-links {
-      display: flex; gap: 2.2rem;
-      list-style: none;
-    }
+    .nav-links { display: flex; gap: 2.2rem; list-style: none; }
     .nav-links a {
       font-size: 12px; letter-spacing: 0.1em;
       text-transform: uppercase; color: var(--stone);
-      text-decoration: none;
-      transition: color 0.15s;
+      text-decoration: none; transition: color 0.15s;
     }
     .nav-links a:hover { color: var(--charcoal); }
     .nav-reserve {
@@ -63,20 +59,17 @@
       padding: 8px 22px; border: 0.5px solid var(--charcoal);
       color: var(--charcoal); background: transparent;
       cursor: pointer; font-family: 'DM Sans', sans-serif;
-      transition: background 0.15s, color 0.15s;
+      transition: background 0.15s, color 0.15s; text-decoration: none;
+      display: inline-block;
     }
     .nav-reserve:hover { background: var(--charcoal); color: var(--cream); }
     .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
-    .nav-hamburger span {
-      display: block; width: 22px; height: 1px;
-      background: var(--charcoal); margin: 5px 0;
-      transition: all 0.2s;
-    }
+    .nav-hamburger span { display: block; width: 22px; height: 1px; background: var(--charcoal); margin: 5px 0; transition: all 0.2s; }
 
     /* ── HERO ── */
     .hero {
       display: grid; grid-template-columns: 1fr 1fr;
-      min-height: 540px;
+      min-height: 560px;
       border-bottom: 0.5px solid var(--rule);
     }
     .hero-left {
@@ -86,8 +79,7 @@
     }
     .eyebrow {
       font-size: 11px; letter-spacing: 0.16em;
-      text-transform: uppercase; color: var(--stone);
-      margin-bottom: 2.5rem;
+      text-transform: uppercase; color: var(--stone); margin-bottom: 2.5rem;
     }
     h1 {
       font-family: 'Cormorant Garamond', serif;
@@ -107,15 +99,13 @@
       letter-spacing: 0.1em; text-transform: uppercase;
       border: none; cursor: pointer;
       font-family: 'DM Sans', sans-serif;
-      transition: background 0.15s;
-      text-decoration: none; display: inline-block;
+      transition: background 0.15s; text-decoration: none; display: inline-block;
     }
     .btn-primary:hover { background: var(--charcoal); }
     .btn-text {
       font-size: 12px; color: var(--stone); background: none;
       border: none; cursor: pointer; font-family: 'DM Sans', sans-serif;
-      letter-spacing: 0.04em; text-decoration: none;
-      transition: color 0.15s;
+      letter-spacing: 0.04em; text-decoration: none; transition: color 0.15s;
     }
     .btn-text:hover { color: var(--charcoal); }
     .hero-right {
@@ -123,23 +113,10 @@
       display: flex; align-items: center; justify-content: center;
       position: relative; overflow: hidden; min-height: 480px;
     }
-    .hero-img {
-      width: 100%; height: 100%; object-fit: cover;
-      display: block;
-    }
-    .hero-img-placeholder {
-      text-align: center; color: #5A4E46;
-      padding: 2rem;
-    }
-    .hero-img-placeholder p {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 17px; font-style: italic;
-      color: #5A4E46; margin-top: 12px;
-    }
-    .hero-img-placeholder small {
-      font-size: 12px; color: #4A3E38;
-      display: block; margin-top: 6px;
-    }
+    .hero-img { width: 100%; height: 100%; object-fit: cover; display: block; position: absolute; inset: 0; }
+    .hero-img-placeholder { text-align: center; color: #5A4E46; padding: 2rem; }
+    .hero-img-placeholder p { font-family: 'Cormorant Garamond', serif; font-size: 17px; font-style: italic; color: #5A4E46; margin-top: 12px; }
+    .hero-img-placeholder small { font-size: 12px; color: #4A3E38; display: block; margin-top: 6px; }
     .hero-stamp {
       position: absolute; bottom: 2rem; right: 2rem;
       width: 64px; height: 64px;
@@ -153,25 +130,19 @@
       text-align: center; line-height: 1.4;
     }
 
-    /* ── STATS BAND ── */
+    /* ── STATS ── */
     .stats-band {
       display: grid; grid-template-columns: repeat(3, 1fr);
       border-bottom: 0.5px solid var(--rule);
     }
-    .stat-item {
-      padding: 1.8rem 2rem;
-      border-right: 0.5px solid var(--rule);
-    }
+    .stat-item { padding: 1.8rem 2rem; border-right: 0.5px solid var(--rule); }
     .stat-item:last-child { border-right: none; }
     .stat-num {
       font-family: 'Cormorant Garamond', serif;
       font-size: 32px; color: var(--red);
       font-weight: 300; display: block; margin-bottom: 4px;
     }
-    .stat-label {
-      color: var(--stone); text-transform: uppercase;
-      letter-spacing: 0.1em; font-size: 11px;
-    }
+    .stat-label { color: var(--stone); text-transform: uppercase; letter-spacing: 0.1em; font-size: 11px; }
 
     /* ── EVENTS ── */
     .events-section { padding: 4rem 3rem; border-bottom: 0.5px solid var(--rule); }
@@ -181,10 +152,7 @@
       margin-bottom: 2.5rem;
       display: flex; align-items: center; gap: 1rem;
     }
-    .section-header::after {
-      content: ''; flex: 1; height: 0.5px;
-      background: var(--rule);
-    }
+    .section-header::after { content: ''; flex: 1; height: 0.5px; background: var(--rule); }
     .event-row {
       display: grid; grid-template-columns: 72px 1fr auto;
       gap: 2rem; align-items: center;
@@ -192,23 +160,10 @@
       border-bottom: 0.5px solid rgba(58,53,48,0.08);
     }
     .event-row:last-child { border-bottom: none; }
-    .event-mo {
-      font-size: 11px; letter-spacing: 0.1em;
-      text-transform: uppercase; color: var(--stone);
-    }
-    .event-dy {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 40px; line-height: 1;
-      color: var(--ink); font-weight: 300;
-    }
-    .event-name {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 24px; font-weight: 400;
-      color: var(--ink); margin-bottom: 5px;
-    }
-    .event-detail {
-      font-size: 12px; color: var(--stone); letter-spacing: 0.04em;
-    }
+    .event-mo { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--stone); }
+    .event-dy { font-family: 'Cormorant Garamond', serif; font-size: 40px; line-height: 1; color: var(--ink); font-weight: 300; }
+    .event-name { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 400; color: var(--ink); margin-bottom: 5px; }
+    .event-detail { font-size: 12px; color: var(--stone); letter-spacing: 0.04em; }
     .event-tag {
       font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
       padding: 7px 16px; border: 0.5px solid rgba(58,53,48,0.25);
@@ -224,167 +179,175 @@
       display: grid; grid-template-columns: repeat(3, 1fr);
       border-bottom: 0.5px solid var(--rule);
     }
-    .cuisine-tile {
-      padding: 3.5rem 2.5rem;
-      border-right: 0.5px solid rgba(255,255,255,0.06);
-    }
+    .cuisine-tile { padding: 3.5rem 2.5rem; border-right: 0.5px solid rgba(255,255,255,0.06); }
     .cuisine-tile:last-child { border-right: none; }
-    .cuisine-tile.korean  { background: #3D1F1A; }
-    .cuisine-tile.japanese { background: #1A2E2A; }
-    .cuisine-tile.chinese { background: #2A2035; }
-    .cuisine-kanji {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 56px; font-weight: 300;
-      line-height: 1; margin-bottom: 1.2rem;
-      display: block;
-    }
-    .cuisine-tile.korean  .cuisine-kanji { color: #E8896A; }
-    .cuisine-tile.japanese .cuisine-kanji { color: #7ABFAA; }
-    .cuisine-tile.chinese  .cuisine-kanji { color: #A08BC8; }
-    .cuisine-name {
-      font-size: 11px; letter-spacing: 0.14em;
-      text-transform: uppercase; margin-bottom: 0.6rem; display: block;
-    }
-    .cuisine-tile.korean  .cuisine-name { color: #C87A5A; }
-    .cuisine-tile.japanese .cuisine-name { color: #5A9E88; }
-    .cuisine-tile.chinese  .cuisine-name { color: #8068A8; }
+    .cuisine-tile.japanese  { background: #1A2E2A; }
+    .cuisine-tile.chinese   { background: #2A2035; }
+    .cuisine-tile.western   { background: #1E2530; }
+    .cuisine-kanji { font-family: 'Cormorant Garamond', serif; font-size: 56px; font-weight: 300; line-height: 1; margin-bottom: 1.2rem; display: block; }
+    .cuisine-tile.japanese .cuisine-kanji  { color: #7ABFAA; }
+    .cuisine-tile.chinese  .cuisine-kanji  { color: #A08BC8; }
+    .cuisine-tile.western  .cuisine-kanji  { color: #8BAECF; }
+    .cuisine-name { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 0.6rem; display: block; }
+    .cuisine-tile.japanese .cuisine-name  { color: #5A9E88; }
+    .cuisine-tile.chinese  .cuisine-name  { color: #8068A8; }
+    .cuisine-tile.western  .cuisine-name  { color: #6A90B8; }
     .cuisine-desc { font-size: 13px; line-height: 1.8; font-weight: 300; }
-    .cuisine-tile.korean  .cuisine-desc { color: #C8A898; }
-    .cuisine-tile.japanese .cuisine-desc { color: #98C8B8; }
-    .cuisine-tile.chinese  .cuisine-desc { color: #B8A8D8; }
+    .cuisine-tile.japanese .cuisine-desc  { color: #98C8B8; }
+    .cuisine-tile.chinese  .cuisine-desc  { color: #B8A8D8; }
+    .cuisine-tile.western  .cuisine-desc  { color: #A8C0D8; }
 
     /* ── PHILOSOPHY ── */
     .philosophy {
       display: grid; grid-template-columns: 1fr 1fr;
       border-bottom: 0.5px solid var(--rule);
     }
-    .phil-left {
-      padding: 5rem 3rem;
-      border-right: 0.5px solid var(--rule);
-      background: var(--pale);
-    }
+    .phil-left { padding: 5rem 3rem; border-right: 0.5px solid var(--rule); background: var(--pale); }
     .phil-quote {
       font-family: 'Cormorant Garamond', serif;
       font-size: clamp(26px, 3vw, 36px);
       line-height: 1.35; font-style: italic;
-      font-weight: 300; color: var(--ink);
-      margin-bottom: 1.5rem;
+      font-weight: 300; color: var(--ink); margin-bottom: 1.5rem;
     }
     .phil-quote em { color: var(--red); font-style: normal; }
-    .phil-attr {
-      font-size: 11px; letter-spacing: 0.12em;
-      text-transform: uppercase; color: var(--stone);
-      margin-bottom: 2rem;
-    }
-    .phil-body {
-      font-size: 14px; line-height: 1.9;
-      color: var(--mist);
-    }
+    .phil-attr { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--stone); margin-bottom: 2rem; }
+    .phil-body { font-size: 14px; line-height: 1.9; color: var(--mist); }
     .phil-right {
       background: var(--ink);
       display: flex; align-items: center; justify-content: center;
-      flex-direction: column; gap: 2rem;
-      padding: 3rem; min-height: 360px;
+      flex-direction: column; gap: 2rem; padding: 3rem; min-height: 360px;
     }
     .phil-stat { text-align: center; }
-    .phil-stat-num {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 52px; font-weight: 300; line-height: 1;
+    .phil-stat-num { font-family: 'Cormorant Garamond', serif; font-size: 52px; font-weight: 300; line-height: 1; }
+    .phil-stat-label { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; margin-top: 6px; }
+    .phil-divider { width: 0.5px; height: 40px; background: rgba(255,255,255,0.1); }
+
+    /* ── GALLERY ── */
+    .gallery-section { padding: 4rem 3rem; border-bottom: 0.5px solid var(--rule); }
+    .gallery-intro {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 4rem; align-items: end;
+      margin-bottom: 2.5rem;
     }
-    .phil-stat-label {
-      font-size: 11px; letter-spacing: 0.1em;
-      text-transform: uppercase; margin-top: 6px;
-    }
-    .phil-divider {
-      width: 0.5px; height: 40px;
-      background: rgba(255,255,255,0.1);
+    .gallery-intro p { font-size: 14px; line-height: 1.9; color: var(--mist); }
+
+    /* masonry-style grid */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: auto;
+      gap: 10px;
     }
 
-    /* ── PRESS BAND ── */
+    .gitem {
+      background: #D8D2C8;
+      overflow: hidden;
+      position: relative;
+    }
+    /* placeholder styling */
+    .gitem-inner {
+      width: 100%; height: 100%;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: 8px; padding: 1.5rem;
+      text-align: center;
+    }
+    .gitem img {
+      width: 100%; height: 100%;
+      object-fit: cover; display: block;
+      transition: transform 0.4s ease;
+    }
+    .gitem:hover img { transform: scale(1.03); }
+    .gitem-label {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 14px; font-style: italic;
+      color: #8C8075;
+    }
+    .gitem-sub { font-size: 11px; color: #A09488; }
+
+    /* layout: row 1 — large left (spans 7), tall right (spans 5) */
+    .gitem:nth-child(1) { grid-column: 1 / 8;  grid-row: 1; height: 340px; }
+    .gitem:nth-child(2) { grid-column: 8 / 13; grid-row: 1 / 3; }
+
+    /* row 2 — two medium tiles left */
+    .gitem:nth-child(3) { grid-column: 1 / 5;  grid-row: 2; height: 240px; }
+    .gitem:nth-child(4) { grid-column: 5 / 8;  grid-row: 2; height: 240px; }
+
+    /* row 3 — wide panoramic + small square */
+    .gitem:nth-child(5) { grid-column: 1 / 9;  grid-row: 3; height: 280px; }
+    .gitem:nth-child(6) { grid-column: 9 / 13; grid-row: 3; height: 280px; }
+
+    /* row 4 — three even columns */
+    .gitem:nth-child(7) { grid-column: 1 / 5;  grid-row: 4; height: 240px; }
+    .gitem:nth-child(8) { grid-column: 5 / 9;  grid-row: 4; height: 240px; }
+    .gitem:nth-child(9) { grid-column: 9 / 13; grid-row: 4; height: 240px; }
+
+    /* overlay caption on hover */
+    .gitem-caption {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      padding: 1rem 1.2rem;
+      background: linear-gradient(transparent, rgba(28,25,23,0.7));
+      opacity: 0; transition: opacity 0.25s;
+    }
+    .gitem:hover .gitem-caption { opacity: 1; }
+    .gitem-caption span {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 14px; font-style: italic;
+      color: rgba(245,242,238,0.9);
+    }
+
+    /* ── PRESS ── */
     .press-band {
       background: var(--red);
       padding: 1.4rem 3rem;
       display: flex; align-items: center; gap: 3rem;
       overflow: hidden; border-bottom: 0.5px solid var(--rule);
     }
-    .press-item {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 15px; font-style: italic;
-      color: rgba(245,242,238,0.88); white-space: nowrap;
-    }
+    .press-item { font-family: 'Cormorant Garamond', serif; font-size: 15px; font-style: italic; color: rgba(245,242,238,0.88); white-space: nowrap; }
     .press-sep { color: rgba(245,242,238,0.4); font-size: 18px; flex-shrink: 0; }
 
-    /* ── ABOUT TEASER ── */
+    /* ── ABOUT ── */
     .about-teaser {
       display: grid; grid-template-columns: 1fr 2fr;
       border-bottom: 0.5px solid var(--rule);
     }
-    .about-label {
-      padding: 4rem 3rem;
-      border-right: 0.5px solid var(--rule);
-      display: flex; align-items: flex-start;
-    }
-    .about-label h2 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(28px, 3.5vw, 42px);
-      font-weight: 300; line-height: 1.2; color: var(--ink);
-    }
+    .about-label { padding: 4rem 3rem; border-right: 0.5px solid var(--rule); display: flex; align-items: flex-start; }
+    .about-label h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(28px, 3.5vw, 42px); font-weight: 300; line-height: 1.2; color: var(--ink); }
     .about-content { padding: 4rem 3rem; }
-    .about-content p {
-      font-size: 15px; line-height: 1.95;
-      color: var(--mist); margin-bottom: 1.5rem;
-    }
+    .about-content p { font-size: 15px; line-height: 1.95; color: var(--mist); margin-bottom: 1.5rem; }
     .about-content p:last-of-type { margin-bottom: 2rem; }
 
     /* ── CONTACT ── */
     .contact-section {
-      padding: 4rem 3rem;
-      border-bottom: 0.5px solid var(--rule);
+      padding: 4rem 3rem; border-bottom: 0.5px solid var(--rule);
       display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;
     }
-    .contact-left h3 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 28px; font-weight: 300;
-      color: var(--ink); margin-bottom: 1rem;
-    }
-    .contact-left p {
-      font-size: 14px; line-height: 1.8;
-      color: var(--mist); margin-bottom: 1.5rem;
-    }
-    .contact-detail {
-      font-size: 12px; letter-spacing: 0.06em;
-      color: var(--stone); margin-bottom: 0.5rem;
-    }
-    .contact-detail a { color: var(--charcoal); text-decoration: none; }
+    .contact-left h3 { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 300; color: var(--ink); margin-bottom: 1rem; }
+    .contact-left p { font-size: 14px; line-height: 1.8; color: var(--mist); margin-bottom: 1.5rem; }
+    .contact-detail { font-size: 12px; letter-spacing: 0.06em; color: var(--stone); margin-bottom: 0.5rem; }
+    .contact-detail a { color: var(--charcoal); text-decoration: none; transition: color 0.15s; }
     .contact-detail a:hover { color: var(--red); }
     .contact-right { display: flex; flex-direction: column; gap: 1rem; }
     .form-row { display: flex; flex-direction: column; gap: 0.4rem; }
-    .form-label {
-      font-size: 11px; letter-spacing: 0.1em;
-      text-transform: uppercase; color: var(--stone);
-    }
+    .form-label { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--stone); }
     .form-input, .form-textarea {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 14px; font-weight: 300;
+      font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 300;
       color: var(--charcoal); background: transparent;
       border: none; border-bottom: 0.5px solid var(--rule);
-      padding: 10px 0; outline: none; width: 100%;
-      transition: border-color 0.15s;
+      padding: 10px 0; outline: none; width: 100%; transition: border-color 0.15s;
     }
-    .form-input:focus, .form-textarea:focus {
-      border-bottom-color: var(--charcoal);
-    }
+    .form-input:focus, .form-textarea:focus { border-bottom-color: var(--charcoal); }
     .form-textarea { resize: vertical; min-height: 100px; }
     .form-submit {
       align-self: flex-start;
       background: var(--ink); color: var(--cream);
       padding: 13px 30px; font-size: 11px;
       letter-spacing: 0.1em; text-transform: uppercase;
-      border: none; cursor: pointer;
-      font-family: 'DM Sans', sans-serif;
+      border: none; cursor: pointer; font-family: 'DM Sans', sans-serif;
       transition: background 0.15s; margin-top: 0.5rem;
     }
     .form-submit:hover { background: var(--charcoal); }
+    .form-submit:disabled { opacity: 0.5; cursor: default; }
 
     /* ── FOOTER ── */
     footer {
@@ -392,22 +355,11 @@
       display: flex; justify-content: space-between; align-items: center;
       flex-wrap: wrap; gap: 1rem;
     }
-    .footer-logo {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 16px; letter-spacing: 0.12em;
-      text-transform: uppercase; color: var(--ink);
-      text-decoration: none;
-    }
+    .footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 16px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink); text-decoration: none; }
     .footer-logo span { color: var(--red); }
     .footer-note { font-size: 11px; color: var(--stone); }
-    .footer-links {
-      display: flex; gap: 1.5rem; list-style: none;
-    }
-    .footer-links a {
-      font-size: 11px; color: var(--stone);
-      letter-spacing: 0.1em; text-transform: uppercase;
-      text-decoration: none; transition: color 0.15s;
-    }
+    .footer-links { display: flex; gap: 1.5rem; list-style: none; }
+    .footer-links a { font-size: 11px; color: var(--stone); letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; transition: color 0.15s; }
     .footer-links a:hover { color: var(--charcoal); }
 
     /* ── RESPONSIVE ── */
@@ -419,8 +371,7 @@
         display: flex; flex-direction: column;
         position: absolute; top: 100%; left: 0; right: 0;
         background: var(--cream); padding: 1.5rem;
-        border-bottom: 0.5px solid var(--rule); gap: 1.2rem;
-        z-index: 99;
+        border-bottom: 0.5px solid var(--rule); gap: 1.2rem; z-index: 99;
       }
       .nav-mobile-open .nav-reserve { display: block; margin: 0 1.5rem 1.5rem; }
 
@@ -428,7 +379,7 @@
       .hero-left { padding: 3rem 1.5rem; border-right: none; border-bottom: 0.5px solid var(--rule); }
       .hero-right { min-height: 260px; }
 
-      .stats-band { grid-template-columns: repeat(3,1fr); }
+      .stats-band { grid-template-columns: repeat(3, 1fr); }
       .stat-item { padding: 1.2rem 1rem; }
 
       .events-section { padding: 3rem 1.5rem; }
@@ -443,6 +394,12 @@
       .phil-right { flex-direction: row; flex-wrap: wrap; justify-content: center; min-height: auto; padding: 2.5rem 1.5rem; }
       .phil-divider { width: 40px; height: 0.5px; }
 
+      .gallery-section { padding: 3rem 1.5rem; }
+      .gallery-intro { grid-template-columns: 1fr; gap: 1rem; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; gap: 6px; }
+      .gitem:nth-child(n) { grid-column: auto; grid-row: auto; height: 180px; }
+      .gitem:nth-child(1) { grid-column: 1 / 3; height: 220px; }
+
       .press-band { gap: 1.5rem; padding: 1.2rem 1.5rem; flex-wrap: wrap; }
 
       .about-teaser { grid-template-columns: 1fr; }
@@ -454,9 +411,7 @@
       footer { padding: 1.5rem; flex-direction: column; align-items: flex-start; gap: 0.8rem; }
     }
 
-    @media (prefers-reduced-motion: reduce) {
-      * { transition: none !important; }
-    }
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
   </style>
 </head>
 <body>
@@ -465,9 +420,9 @@
   <nav id="main-nav">
     <a href="#" class="nav-logo">Rosanjin<span>.</span></a>
     <ul class="nav-links">
-      <li><a href="#about">About</a></li>
       <li><a href="#events">Events</a></li>
-      <li><a href="#philosophy">Philosophy</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <a href="#contact" class="nav-reserve">Reserve a seat</a>
@@ -480,17 +435,18 @@
   <section class="hero">
     <div class="hero-left">
       <div>
-        <p class="eyebrow">Pop-up dining · New Jersey</p>
+        <p class="eyebrow">Pop-up dining · Supper club</p>
         <h1>Food is the <em>art</em><br>of living well.</h1>
-        <p class="hero-body">Rosanjin is an intimate pop-up dining experience rooted in the traditions of Korea, Japan, and China — reinterpreted through a modern Western lens. Each gathering is singular, seasonal, and unrepeatable.</p>
+        <p class="hero-body">rosanjin is an intimate pop-up dining experience rooted in the traditions of Japan and China — reinterpreted through a modern Western lens. Each gathering is singular, seasonal, and unrepeatable.</p>
         <div class="hero-actions">
           <a href="#events" class="btn-primary">View upcoming events</a>
-          <a href="#philosophy" class="btn-text">Our philosophy →</a>
+          <a href="#about" class="btn-text">Our philosophy →</a>
         </div>
       </div>
     </div>
     <div class="hero-right">
-      <!-- Replace the div below with: <img src="images/hero.jpg" alt="Rosanjin signature dish" class="hero-img"> -->
+      <!-- To add your hero image, replace this div with:
+           <img src="images/hero.jpg" alt="Rosanjin signature dish" class="hero-img"> -->
       <div class="hero-img-placeholder">
         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#5A4E46" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
         <p>Signature dish photograph</p>
@@ -503,55 +459,52 @@
   <!-- STATS -->
   <div class="stats-band">
     <div class="stat-item">
-      <span class="stat-num">12</span>
+      <span class="stat-num">#</span>
       <span class="stat-label">Seats per event</span>
     </div>
     <div class="stat-item">
-      <span class="stat-num">8–10</span>
-      <span class="stat-label">Courses per sitting</span>
+      <span class="stat-num">5-6</span>
+      <span class="stat-label">Courses</span>
     </div>
     <div class="stat-item">
-      <span class="stat-num">季</span>
-      <span class="stat-label">Seasonal menus only</span>
+      <span class="stat-num"></span>
+      <span class="stat-label">Seasonal menus</span>
     </div>
   </div>
 
   <!-- EVENTS -->
   <section class="events-section" id="events">
     <div class="section-header">Upcoming events</div>
-
     <div class="event-row">
       <div>
-        <div class="event-mo">Jul</div>
-        <div class="event-dy">12</div>
+        <div class="event-mo">TBA</div>
+        <div class="event-dy">TBA</div>
       </div>
       <div>
-        <div class="event-name">Summer Omakase — The Garden Edition</div>
-        <div class="event-detail">Millburn, NJ &nbsp;·&nbsp; 12 seats &nbsp;·&nbsp; $95 per person</div>
+        <div class="event-name">TBA</div>
+        <div class="event-detail"> &nbsp;·&nbsp;&nbsp;·&nbsp;</div>
       </div>
       <a href="#contact" class="event-tag">Inquire</a>
     </div>
-
     <div class="event-row">
       <div>
-        <div class="event-mo">Aug</div>
-        <div class="event-dy">03</div>
+        <div class="event-mo">TBA</div>
+        <div class="event-dy">TBA</div>
       </div>
       <div>
-        <div class="event-name">Harvest Table — Korean &amp; French</div>
-        <div class="event-detail">Location TBA &nbsp;·&nbsp; 8 seats &nbsp;·&nbsp; $120 per person</div>
+        <div class="event-name">&amp;TBA</div>
+        <div class="event-detail">TBA &nbsp;·&nbsp; TBA seats &nbsp;·&nbsp; $TBA per person</div>
       </div>
       <a href="#contact" class="event-tag">Inquire</a>
     </div>
-
     <div class="event-row">
       <div>
-        <div class="event-mo">Sep</div>
-        <div class="event-dy">21</div>
+        <div class="event-mo">TBA</div>
+        <div class="event-dy">TBA</div>
       </div>
       <div>
-        <div class="event-name">Autumn Kaiseki — Earth &amp; Ember</div>
-        <div class="event-detail">Millburn, NJ &nbsp;·&nbsp; 10 seats &nbsp;·&nbsp; $145 per person</div>
+        <div class="event-name"> TBA &amp; TBA </div>
+        <div class="event-detail">TBA &nbsp;·&nbsp; TBA seats &nbsp;·&nbsp; $TBA per person</div>
       </div>
       <a href="#contact" class="event-tag">Inquire</a>
     </div>
@@ -559,20 +512,20 @@
 
   <!-- CUISINE STRIP -->
   <section class="cuisine-strip">
-    <div class="cuisine-tile korean">
-      <span class="cuisine-kanji">한</span>
-      <span class="cuisine-name">Korean</span>
-      <p class="cuisine-desc">Fermented depth, bold umami, the slow patience of doenjang and ganjang.</p>
-    </div>
     <div class="cuisine-tile japanese">
       <span class="cuisine-kanji">和</span>
       <span class="cuisine-name">Japanese</span>
-      <p class="cuisine-desc">Restraint as craft — dashi clarity, seasonal precision, the art of subtraction.</p>
+      <p class="cuisine-desc">.</p>
     </div>
     <div class="cuisine-tile chinese">
       <span class="cuisine-kanji">中</span>
       <span class="cuisine-name">Chinese</span>
-      <p class="cuisine-desc">Wok breath, layered spice, the ancient alchemy of fire and time.</p>
+      <p class="cuisine-desc">.</p>
+    </div>
+    <div class="cuisine-tile western">
+      <span class="cuisine-kanji">W</span>
+      <span class="cuisine-name">Western</span>
+      <p class="cuisine-desc">.</p>
     </div>
   </section>
 
@@ -582,46 +535,157 @@
       <div class="section-header" style="margin-bottom:2rem;">The philosophy</div>
       <p class="phil-quote">"The <em>vessel</em> and the food within it are one."</p>
       <p class="phil-attr">— Kitaoji Rosanjin, ceramicist &amp; chef</p>
-      <p class="phil-body">We cook under this belief — that every element of a meal, from the dish it rests on to the hand that prepared it, forms a single continuous expression. Influenced by the kitchens of Korea, Japan, and China, shaped by years in the West, this is food that moves between worlds without losing its soul.</p>
+      <p class="phil-body"> I'd like my events to pursue this ideal from a different perspective. I want to show the culture and experiences that has influenced my dishes as a single continuous expression. </p>
     </div>
     <div class="phil-right">
       <div class="phil-stat">
-        <div class="phil-stat-num" style="color:#E8896A;">한</div>
-        <div class="phil-stat-label" style="color:#C8A898;">Korean roots</div>
+        <div class="phil-stat-num" style="color:#7ABFAA;"></div>
+        <div class="phil-stat-label" style="color:#98C8B8;"></div>
       </div>
       <div class="phil-divider"></div>
       <div class="phil-stat">
-        <div class="phil-stat-num" style="color:#7ABFAA;">和</div>
-        <div class="phil-stat-label" style="color:#98C8B8;">Japanese spirit</div>
+        <div class="phil-stat-num" style="color:#A08BC8;"></div>
+        <div class="phil-stat-label" style="color:#B8A8D8;"></div>
       </div>
       <div class="phil-divider"></div>
       <div class="phil-stat">
-        <div class="phil-stat-num" style="color:#A08BC8;">中</div>
-        <div class="phil-stat-label" style="color:#B8A8D8;">Chinese roots</div>
+        <div class="phil-stat-num" style="color:#8BAECF;"></div>
+        <div class="phil-stat-label" style="color:#A8C0D8;"></div>
       </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery-section" id="gallery">
+    <div class="gallery-intro">
+      <div class="section-header" style="margin-bottom:0;">From the table</div>
+      <p>A record of past dishes and events</p>
+    </div>
+
+    <div class="gallery-grid">
+
+      <!-- Slot 1: large landscape — hero dish -->
+      <div class="gitem">
+        <!-- <img src="images/gallery-1.jpg" alt="Dish from Summer Omakase"> -->
+        <div class="gitem-inner">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#8C8075" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span class="gitem-label">Signature dish</span>
+          <span class="gitem-sub">Replace with images/gallery-1.jpg</span>
+        </div>
+        <div class="gitem-caption"><span>Summer Omakase, 2024</span></div>
+      </div>
+
+      <!-- Slot 2: tall portrait — spans 2 rows -->
+      <div class="gitem">
+        <!-- <img src="images/gallery-2.jpg" alt="Table setting"> -->
+        <div class="gitem-inner">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#8C8075" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span class="gitem-label">Table setting</span>
+          <span class="gitem-sub">Replace with images/gallery-2.jpg</span>
+        </div>
+        <div class="gitem-caption"><span>Harvest Table, 2024</span></div>
+      </div>
+
+      <!-- Slot 3 -->
+      <div class="gitem">
+        <!-- <img src="images/gallery-3.jpg" alt="Plating detail"> -->
+        <div class="gitem-inner">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#8C8075" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span class="gitem-label">Plating detail</span>
+          <span class="gitem-sub">Replace with images/gallery-3.jpg</span>
+        </div>
+        <div class="gitem-caption"><span>Plating detail</span></div>
+      </div>
+
+      <!-- Slot 4 -->
+      <div class="gitem">
+        <!-- <img src="images/gallery-4.jpg" alt="Guests at the table"> -->
+        <div class="gitem-inner">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#8C8075" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span class="gitem-label">Guests at the table</span>
+          <span class="gitem-sub">Replace with images/gallery-4.jpg</span>
+        </div>
+        <div class="gitem-caption"><span>An evening in Millburn</span></div>
+      </div>
+
+      <!-- Slot 5: wide panoramic -->
+      <div class="gitem">
+        <!-- <img src="images/gallery-5.jpg" alt="Kitchen in action"> -->
+        <div class="gitem-inner">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#8C8075" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span class="gitem-label">Kitchen in action</span>
+          <span class="gitem-sub">Replace with images/gallery-5.jpg</span>
+        </div>
+        <div class="gitem-caption"><span>Behind the pass</span></div>
+      </div>
+
+      <!-- Slot 6 -->
+      <div class="gitem">
+        <!-- <img src="images/gallery-6.jpg" alt="Ceramic vessels"> -->
+        <div class="gitem-inner">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#8C8075" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span class="gitem-label">Ceramic vessels</span>
+          <span class="gitem-sub">Replace with images/gallery-6.jpg</span>
+        </div>
+        <div class="gitem-caption"><span>The vessels</span></div>
+      </div>
+
+      <!-- Slot 7 -->
+      <div class="gitem">
+        <!-- <img src="images/gallery-7.jpg" alt="Autumn course"> -->
+        <div class="gitem-inner">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#8C8075" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span class="gitem-label">Autumn course</span>
+          <span class="gitem-sub">Replace with images/gallery-7.jpg</span>
+        </div>
+        <div class="gitem-caption"><span>Autumn Kaiseki, 2024</span></div>
+      </div>
+
+      <!-- Slot 8 -->
+      <div class="gitem">
+        <!-- <img src="images/gallery-8.jpg" alt="Ingredients"> -->
+        <div class="gitem-inner">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#8C8075" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span class="gitem-label">Seasonal ingredients</span>
+          <span class="gitem-sub">Replace with images/gallery-8.jpg</span>
+        </div>
+        <div class="gitem-caption"><span>From the market</span></div>
+      </div>
+
+      <!-- Slot 9 -->
+      <div class="gitem">
+        <!-- <img src="images/gallery-9.jpg" alt="Final course"> -->
+        <div class="gitem-inner">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#8C8075" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span class="gitem-label">Final course</span>
+          <span class="gitem-sub">Replace with images/gallery-9.jpg</span>
+        </div>
+        <div class="gitem-caption"><span>The last bite</span></div>
+      </div>
+
     </div>
   </section>
 
   <!-- PRESS -->
   <div class="press-band">
-    <span class="press-item">"One of NJ's most exciting new dining experiences"</span>
+    <span class="press-item"></span>
     <span class="press-sep">·</span>
-    <span class="press-item">"Intimate, precise, deeply personal food"</span>
+    <span class="press-item"></span>
     <span class="press-sep">·</span>
-    <span class="press-item">"A table you won't forget"</span>
+    <span class="press-item"></span>
     <span class="press-sep">·</span>
-    <span class="press-item">"Rosanjin is doing something genuinely new"</span>
+    <span class="press-item"></span>
   </div>
 
   <!-- ABOUT -->
   <section class="about-teaser" id="about">
     <div class="about-label">
-      <h2>The story<br>behind<br>the table.</h2>
+      <h2>The story<br><br></h2>
     </div>
     <div class="about-content">
-      <p>Rosanjin takes its name from Kitaoji Rosanjin — the Japanese polymath who believed that cooking and art were inseparable acts. A ceramicist, calligrapher, and one of the most influential culinary figures of the twentieth century, he embodied the idea that every meal deserves the same care as any work of art.</p>
-      <p>This pop-up carries that spirit into a contemporary context. Rooted in the flavor traditions of Korea, Japan, and China — fermented, fire-kissed, and precise — each menu is shaped by the season and served in an intimate setting of twelve or fewer guests. Nothing repeats. Every gathering is its own thing.</p>
-      <p>We are based in Millburn, New Jersey, and host events across the region. Private events, collaborations, and press inquiries are always welcome.</p>
+      <p>I want to create events that share my passion and love for food. I believe a dining table is a great vessel for conversation and familiarity.</p>
+      <p>These events are an expression of my journey as a student studying hospitality and food and beverage management. I want to share my love for everything culinary.</p>
+      <p>I hope that I get the chance to see you soon!</p>
       <a href="#contact" class="btn-primary">Get in touch</a>
     </div>
   </section>
@@ -630,10 +694,10 @@
   <section class="contact-section" id="contact">
     <div class="contact-left">
       <h3>Reserve a seat,<br>or say hello.</h3>
-      <p>Seats are limited and fill quickly. Send an inquiry for any upcoming event, or reach out about private dining, collaborations, or press.</p>
-      <p class="contact-detail">Email: <a href="mailto:hello@rosanjin.com">hello@rosanjin.com</a></p>
-      <p class="contact-detail">Instagram: <a href="https://instagram.com" target="_blank">@rosanjin</a></p>
-      <p class="contact-detail">Location: Millburn, New Jersey</p>
+      <p>Seats are limited. Send an inquiry for any upcoming event, or reach out about private dining or collaborations.</p>
+      <p class="contact-detail">Email: <a href="mailto:hello@rosanjin.com">rosanjinbymatt@gmail.com</a></p>
+      <p class="contact-detail">Instagram: <a href="https://instagram.com" target="_blank">@mattcheungcooks</a></p>
+      <p class="contact-detail">Location: New Jersey</p>
     </div>
     <div class="contact-right">
       <div class="form-row">
@@ -653,7 +717,7 @@
         <textarea class="form-textarea" id="message" name="message" placeholder="Anything you'd like us to know..."></textarea>
       </div>
       <button class="form-submit" type="button" onclick="handleSubmit()">Send inquiry</button>
-      <p id="form-confirm" style="font-size:13px;color:#3A3530;display:none;margin-top:0.5rem;">
+      <p id="form-confirm" style="font-size:13px;color:var(--charcoal);display:none;margin-top:0.5rem;">
         Thank you — we'll be in touch soon.
       </p>
     </div>
@@ -662,7 +726,7 @@
   <!-- FOOTER -->
   <footer>
     <a href="#" class="footer-logo">Rosanjin<span>.</span></a>
-    <span class="footer-note">© 2026 · Millburn, New Jersey</span>
+    <span class="footer-note">© 2026 · New Jersey</span>
     <ul class="footer-links">
       <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -682,13 +746,10 @@
     function handleSubmit() {
       var name = document.getElementById('name').value.trim();
       var email = document.getElementById('email').value.trim();
-      if (!name || !email) {
-        alert('Please enter your name and email.');
-        return;
-      }
+      if (!name || !email) { alert('Please enter your name and email.'); return; }
       document.getElementById('form-confirm').style.display = 'block';
-      document.querySelector('.form-submit').disabled = true;
-      document.querySelector('.form-submit').style.opacity = '0.5';
+      var btn = document.querySelector('.form-submit');
+      btn.disabled = true; btn.style.opacity = '0.5';
     }
   </script>
 
